@@ -28,9 +28,9 @@ body {
     text-decoration: underline;
 }
 
-.header__menu-list-selected{
+.header__menu-list-selected {
     text-decoration: underline;
-    text-decoration-color: black;
+    text-decoration-color: white;
 }
 
 .header__menu-list-no-bullet {
@@ -96,10 +96,6 @@ body {
     line-height: 28px;
     letter-spacing: 0%;
     word-spacing: 90%;
-}
-
-.cover__description-text {
-
 }
 
 .cover__description-button {
