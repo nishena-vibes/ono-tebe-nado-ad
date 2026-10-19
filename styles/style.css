@@ -13,56 +13,13 @@ body {
     background-color: white;
 }
 
-.header__menu-list {
-    display: flex;
-    flex-direction: row;
-    list-style:circle;
-    list-style-position:outside;
-    gap: 32px;
-    font-size: 18px;
-    line-height: 100%;
-    letter-spacing: 0%;
-}
 
-.header__menu-list-item {
-    text-decoration: underline;
-}
-
-.header__menu-list-selected {
-    text-decoration: underline;
-    text-decoration-color: white;
-}
-
-.header__menu-list-no-bullet {
-    list-style: none;
-}
 
 .header__logo {
     display: block;
     width: 148px;
     height: 105px;
 }
-
-.header__address {
-    max-width: 240px;
-    display: flex;
-    flex-direction: column;
-    justify-self: flex-end;
-    align-items: flex-start;
-    font-style: normal;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24.3px;
-    letter-spacing: 0%;
-}
-
-.header__address-accent {
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 4px;
-}
-
 
 /* #endregion Header */
 
@@ -108,6 +65,122 @@ body {
 
 /* #endregion Cover */
 
+/* #region Lots */
+
+.lots {
+    display: flex;
+    flex-direction: column;
+    padding: 180px 24px 120px 24px;
+    background-color: white;
+}
+
+.lots__tittle {
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 40px;
+    text-transform: uppercase;
+}
+
+.lots__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 27px 0 30px 0;
+    gap: 25px;
+}
+
+.lots__card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 48px 40px;
+    color: white;
+    /* min-height: 596px; */
+    line-height: 0%;
+}
+
+.lots__card-1 {
+    background-image: url(../images/card-lot-01.jpg);
+}
+
+.lots__card-2 {
+    background-image: url(../images/card-lot-02.jpg);
+}
+
+.lots__card-3 {
+    background-image: url(../images/card-lot-03.jpg);
+}
+
+.lots__card-title {
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: underline;
+    line-height: 120%;
+}
+
+.lots__card-description {
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.lots__link {
+    margin-left: 40px;
+    text-decoration: underline;
+    font-size: 20px;
+    letter-spacing: 0%;
+}
+/* #endregion Lots */
+
+/* #region About */
+
+.about {
+    padding: 0px 24px 180px 24px;
+    background-color: white;
+}
+
+/* #endregion About */
+
+/* #region Footer */
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px 50px 82px 50px;
+    background-color: white;
+    justify-items: flex-start;
+}
+
+.footer .address {
+    justify-self: flex-start;
+}
+
+.footer .menu-list {
+    flex-direction: column;
+    list-style: none;
+    gap: 0px;
+    text-align: center;
+}
+
+.footer .menu {
+    justify-self: center;
+}
+
+.footer__socials {
+    display: flex;
+    width: 100%;
+    max-width: 240px;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-self: flex-end;
+}
+
+.footer__socials-img {
+    width: 48px;
+    height: 48px;
+}
+
+/* #endregion Footer */
+
 /* #region Utilities */
 
 .text-center {
@@ -120,6 +193,50 @@ body {
 
 .text-right {
     text-align: right;
+}
+
+.address {
+    max-width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    align-items: flex-start;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px;
+    letter-spacing: 0%;
+}
+
+.address-accent {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    list-style:circle;
+    list-style-position:outside;
+    gap: 32px;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.menu-list-item {
+    text-decoration: underline;
+}
+
+.menu-list-selected {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.menu-list-no-bullet {
+    list-style: none;
 }
 
 /* #endregion Utilities */
