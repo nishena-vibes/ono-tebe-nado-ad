@@ -22,6 +22,7 @@ body {
 /* #endregion Header */
 
 /* #region Cover */
+
 .cover {
   padding: 50px;
   padding-top: 165px;
@@ -50,6 +51,10 @@ body {
   line-height: 115px;
   letter-spacing: 30%;
   margin-bottom: 106px;
+}
+
+.cover__title h1 {
+  font-size: 100px;
 }
 
 .cover__description {
