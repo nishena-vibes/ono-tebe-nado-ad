@@ -13,8 +13,6 @@ body {
     background-color: white;
 }
 
-
-
 .header__logo {
     display: block;
     width: 148px;
@@ -31,25 +29,37 @@ body {
     background-image: url(../images/cover.jpg);
     background-size: cover;
     background-position: center;
+    position: relative;
+}
+
+.cover::before {
+    position: absolute;
+    content: "";
+    inset: 0px;
+    background-color: rgba(0,0,0,0.6);
 }
 
 .cover__title {
     display: flex;
+    position: relative;
+    z-index: 1;
     flex-direction: column;
     gap: 20px;
     font-size: 100px;
-    font-weight: 700;
+    font-weight: bold;
     line-height: 115px;
     letter-spacing: 30%;
     margin-bottom: 106px;
 }
 
 .cover__description {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     font-size: 22px;
+    z-index: 1;
     line-height: 28px;
     letter-spacing: 0%;
     word-spacing: 90%;
@@ -95,8 +105,17 @@ body {
     flex-direction: column;
     padding: 48px 40px;
     color: white;
-    /* min-height: 596px; */
     line-height: 0%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.lots__card::before {
+    position: absolute;
+    inset: 0px;
+    background-color: rgba(0,0,0,0.6);
+    content: "";
 }
 
 .lots__card-1 {
@@ -112,13 +131,19 @@ body {
 }
 
 .lots__card-title {
+    position: relative;
+    z-index: 1;
     font-size: 22px;
     font-weight: 700;
     text-decoration: underline;
     line-height: 120%;
+    margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
 .lots__card-description {
+    position: relative;
+    z-index: 1;
     font-size: 20px;
     line-height: 120%;
 }
@@ -136,6 +161,11 @@ body {
 .about {
     padding: 0px 24px 180px 24px;
     background-color: white;
+    display: flex;
+}
+
+.about__description {
+    
 }
 
 /* #endregion About */
@@ -185,14 +215,21 @@ body {
 
 .text-center {
     text-align: center;
+    margin-right: -30px;
 }
 
 .text-left {
     text-align: left;
+    margin-right: -20px;
 }
 
 .text-right {
     text-align: right;
+    margin-right: -30px;
+}
+
+.text-right span {
+    letter-spacing: 0;
 }
 
 .address {
